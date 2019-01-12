@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+</style>
+</head>
+
+<div style="width:100%;height:750px;overflow:scroll;">
+
+
+<body class="body">
+
+
+<div>
+
+<div class="header" align="left">
+<a href="index.html">
+  <img src="Images/amclogo.png" class=".img" width="220" height="90" align="left" alt="Image AMC Logo"> </img> <a/>
+
+<div class="header-call-us" align="right">
+<h3> Call us 01536 513679 </h3>
+</div>
+</div>
+
+<br>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+ <a href="#">About us</a>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Computer Systems</a>
+      <a href="#">Servers & Storage</a>
+      <a href="#">Pheriperals</a>
+      <a href="#">Software</a>
+      <a href="#">Networking</a>
+      <a href="#">Components</a>
+      <a href="#">Audio Visual</a>
+      <a href="#">Refurbished Hardware</a>
+    </div>
+  </div> 
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Services    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Managed Print</a>
+      <a href="#">Ethernet / Fibre Cabling </a>
+      <a href="#">Wireless </a>
+      <a href="#">AV Installations</a>
+      <a href="#">Weee Recycling</a>
+      <a href="#">Maintenace</a>
+    </div>
+  </div> 
+
+
+ <a href="#">Our Brands</a>
+
+ <a href="#">Careers</a>
+
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Contact us    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">FAQs</a>
+      <a href="#">Customer Reviews</a>
+    </div>
+  </div> 
+
+
+</div>
+</div>
+
+
+
+
+<h1> Contact Us </h1>
+<div class="left">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="left">
+<div class="footer-text"
+
+<h3>Telephone: <span>01536 513679</span></h3>
+                   <h3>Fax:  <span>01536 516937</span></h3>
+                   <h3>E-mail: <a href=mailto:sales@amccomputersupplies.com> <span class="underline">sales@amccomputersupplies.com</a></span></h3>
+<br><br>
+<p>Find us at: <br>
+                   Unit 6, Cherry Hall Road,<br>
+                   Kettering Business Park,<br>
+                   Kettering, Northants,<br>
+                   NN14 1UE        </p><br><br>
+
+
+
+<p>Contact us:
+    <button onclick="document.getElementById('id01').style.display='block'" class="button"> Click Here </button>
+</p>
+
+  <div id="id01" class="modal">
+    <div class="modal-content animate-top card0">
+      <header class="teal hover-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="button display-topright">&times;</span>
+
+
+<h1> Contact us form</h1>
+
+<div class="container2">
+  <form action="/action_page.php">
+    <label for="fname">First Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Insert your first name..." required>
+
+    <label for="lname">Last Name*</label>
+    <input type="text" id="lname" name="lastname" placeholder="Insert your last name..." required>
+
+<label for="companyname">Company Name*</label>
+    <input type="text" id="companyname" name="companyname" placeholder="Insert the name of your company..." required>
+
+<label for="email">E-mail*</label>
+    <input type="text" id="email" name="email" placeholder="Insert your e-mail..." required>
+
+
+<label for="cn">Contact Number*</label>
+    <input type="text" id="cn" name="cn" placeholder="Insert your phone number..." required>
+
+
+    <label for="nenquiry">Nature of enquiry* </label>
+    <select id="nenquiry" name="Nature of enquiry">
+      <option value="so" selected>Select option</option>
+      <option value="p">Prices</option>
+      <option value="m">Maintenance</option>
+      <option value="d">Delivery</option>
+     <option value="o">Other</option>
+    </select>
+
+    <label for="mes">Message*</label>
+    <textarea id="message" name="subject" placeholder="Type your message..." style="height:100px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>  <br><br><br><br>
+</div>
+
+
+    </div>
+  </div>
+
+<p>&nbsp;</p>
+<div>
+<p style="font-size:28px";> We are here </p>
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+</div>
+<div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div>
+  <div align="center"><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+</div>
+  <div>
+    <div align="center"><small><a href="http://www.autohuren.world/">auto huren</a></small></div>
+  </div>
+  <div align="center">
+    <style>
+    #gmap_canvas img{max-width:none!important;background:none!important}
+    </style>
+  </div>
+</div>
+<div align="center"> </div>
+
+<script type='text/javascript'>
+function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(52.3885627,-0.7130518,1156),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.3885627,-0.7130518,1156)});infowindow = new google.maps.InfoWindow({content:'<strong> Tresham College </strong><br>NN15 6NJ<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="footer-bottom">
+
+<p>>>&copy; Copyright AMC Computer Supplies Ltd 
+
+<span class="underline"> <a class="links2" href="Terms & Conditions.html"> >>Terms and Conditions </a> </span> 
+
+<span class="underline"> <a class="links2" href="Privacy Policy.html"> >>Privacy Policy <a/> </span>
+
+<span> >>Website Design and Development by Tahmina Rahman</span>
+ </p> 
+</div>
+
+
+ <div id="footer-bottom">
+     <div id="footer-address" class="left">
+         <div class="footer-text">
+                   <h3>Registered Office:</h3>
+                   Unit 6, Cherry Hall Road,<br>
+                   Kettering Business Park,<br>
+                   Kettering, Northants,<br>
+                   NN14 1UE       
+                              
+                <h3>Vat No: <span>807 95 99 75</span></h3>
+<br><br>
+ </div>
+ </div>
+
+
+ <div id="footer-contact" class="left">
+      <div class="footer-text">
+                   <h3>Telephone: <span>01536 513679</span></h3>
+                   <h3>Fax:  <span>01536 516937</span></h3>
+                   <h3>E-mail: <a href=mailto:sales@amccomputersupplies.com> <span class="underline">sales@amccomputersupplies.com</a></span></h3>
+                   <h3 class="last"><span>AMC Computer Supplies Ltd is a company registered in England & Wales with company number</span> 5654090</h3>
+<br><br>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+</script>
+
+</body>
+</html>
